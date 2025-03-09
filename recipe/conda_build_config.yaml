@@ -1,7 +1,7 @@
 build_variant:
   - "qt"
-  - "osmesa"  # [linux64]
-  - "egl"  # [linux64]
+  # - "osmesa"  # [linux64]
+  # - "egl"  # [linux64]
 replacements:
   all_replacements:
     - tag: 'CMake build metadata'
@@ -14,3 +14,5 @@ replacements:
         - '*.cmake'
       regex_re: '([^;\s"]+/MacOSX\d*\.?\d*\.sdk)'
       replacement_re: '$ENV{CONDA_BUILD_SYSROOT}'
+channel_targets:
+  - realthunder main
