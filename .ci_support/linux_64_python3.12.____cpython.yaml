@@ -1,29 +1,25 @@
 build_variant:
-- osmesa
+- qt
 c_stdlib:
 - sysroot
 c_stdlib_version:
 - '2.17'
 cdt_name:
-- cos7
+- conda
 channel_sources:
 - conda-forge
 channel_targets:
-- conda-forge main
+- realthunder main
 cxx_compiler:
 - gxx
 cxx_compiler_version:
-- '12'
+- '13'
 docker_image:
-- quay.io/condaforge/linux-anvil-cos7-x86_64
+- quay.io/condaforge/linux-anvil-x86_64:cos7
 expat:
 - '2'
 ffmpeg:
-- '6'
-fortran_compiler:
-- gfortran
-fortran_compiler_version:
-- '12'
+- '7'
 freetype:
 - '2'
 glew:
@@ -31,7 +27,9 @@ glew:
 hdf5:
 - 1.14.3
 jsoncpp:
-- 1.9.5
+- 1.9.6
+libboost_headers:
+- '1.84'
 libjpeg_turbo:
 - '3'
 libnetcdf:
@@ -39,23 +37,25 @@ libnetcdf:
 libpng:
 - '1.6'
 libtiff:
-- '4.6'
+- '4.7'
 libuuid:
 - '2'
+libxcb:
+- '1'
 libxml2:
 - '2'
 lz4_c:
-- 1.9.3
+- '1.10'
 pin_run_as_build:
   python:
     min_pin: x.x
     max_pin: x.x
 proj:
-- 9.3.1
+- '9.5'
 pugixml:
-- '1.14'
+- '1.15'
 python:
-- 3.9.* *_cpython
+- 3.12.* *_cpython
 qt_main:
 - '5.15'
 sqlite:
@@ -69,11 +69,6 @@ tbb_devel:
 tk:
 - '8.6'
 vtk:
-- 9.2.6
-zip_keys:
-- - c_stdlib_version
-  - cdt_name
-- - cxx_compiler_version
-  - fortran_compiler_version
+- 9.3.1
 zlib:
 - '1'
