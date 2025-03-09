@@ -103,7 +103,7 @@ outputs:
         - xorg-xf86vidmodeproto  # [linux and build_variant != "osmesa"]
         - libboost-headers
         - tk  # [not win and (build_variant == "qt")]
-        - ffmpeg
+        - ffmpeg 7.0.1
         - utfcpp
         - eigen
         - double-conversion
@@ -215,10 +215,10 @@ outputs:
       host:
           # We use ffmpeg here in the host section so that conda build
           # uses the global pinnings and ensures ffmpeg compatibility.
-          - ffmpeg
+          - ffmpeg 7.0.1
       run:
         - {{ pin_subpackage("vtk-base", exact=True) }}
-        - ffmpeg
+        - ffmpeg 7.0.1
     test:
       requires:
         - pip
